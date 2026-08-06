@@ -6,6 +6,8 @@ let media = (parseFloat(Nota_1) + parseFloat(Nota_2)) / 2;
 
 if (media >= 7) {
     alert("Parabéns " + Nome + "! Você foi aprovado com média " + media);
+} else if (media >= 5 && media < 7) {
+    alert("Infelizmente " + Nome + ", você está de recuperação. Sua média foi " + media);
 } else {
-    alert("Infelizmente " + Nome + ", você não foi aprovado. Sua média foi " + media);
+    alert("Infelizmente " + Nome + ", você foi reprovado. Sua média foi " + media);
 }
