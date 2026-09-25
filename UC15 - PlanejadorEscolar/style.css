@@ -1,0 +1,238 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0c0c0c, #1a1a1a, #111111);
+    margin: 0;
+    padding: 30px;
+    color: #111111;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border: 2px solid #f4c542;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #d72638;
+}
+
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+
+input, select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #f4c542;
+    border-radius: 10px;
+    background-color: #fffdf5;
+    color: #111111;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+input:focus, select:focus {
+    border-color: #d72638;
+    box-shadow: 0 0 0 3px rgba(215, 38, 56, 0.12);
+    background-color: #ffffff;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f4c542, #f0b400);
+    color: #111111;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(244, 197, 66, 0.25);
+    transition: 0.3s ease;
+}
+
+
+button:hover {
+    background: linear-gradient(135deg, #f0b400, #d72638);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(215, 38, 56, 0.2);
+}
+
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+#mensagem {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    color: #111111;
+    background-color: #ffe6e6;
+    border: 1px solid #d72638;
+}
+
+
+.contadores {
+    text-align: center;
+    margin: 25px 0;
+    padding: 15px;
+    font-weight: bold;
+    color: #111111;
+    background-color: #fff7d6;
+    border-radius: 12px;
+    border: 1px solid #f4c542;
+}
+
+
+.tarefa {
+    background: linear-gradient(135deg, #fffdf5, #fff4d6);
+    padding: 18px;
+    margin-top: 18px;
+    border-radius: 12px;
+    border-left: 6px solid #f4c542;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+
+.tarefa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+.tarefa h3 {
+    color: #d72638;
+    margin-top: 0;
+}
+
+
+.tarefa button {
+    background: linear-gradient(135deg, #d72638, #a61224);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+
+.tarefa button:hover {
+    background: linear-gradient(135deg, #a61224, #7d0c1b);
+}
+
+
+.concluida {
+    opacity: 0.8;
+    border-left-color: #d72638;
+    background: #f7f7f7;
+}
+
+
+.concluida h3 {
+    text-decoration: line-through;
+    color: #444444;
+}
+
+
+.modo-concentracao {
+    background: linear-gradient(135deg, #050505, #191919);
+    color: #ffffff;
+}
+
+
+.modo-concentracao .container {
+    background-color: #111111;
+    border: 2px solid #f4c542;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+.modo-concentracao h1,
+.modo-concentracao h2 {
+    color: #f4c542;
+}
+
+
+.modo-concentracao input,
+.modo-concentracao select {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    border: 1px solid #f4c542;
+}
+
+
+.modo-concentracao input::placeholder {
+    color: #d3d3d3;
+}
+
+
+.modo-concentracao .tarefa {
+    background: #1d1d1d;
+    border-left-color: #d72638;
+    color: #ffffff;
+}
+
+
+.modo-concentracao .tarefa h3 {
+    color: #f4c542;
+}
+
+
+.modo-concentracao .contadores {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    border-color: #f4c542;
+}
+
+
+.modo-concentracao #mensagem {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    border-color: #d72638;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+}
