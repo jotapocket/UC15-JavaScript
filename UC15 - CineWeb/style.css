@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #531636;
+    --secondary-color: #fbcb29;
+    --background-color: #ebebe0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #70234b;
+}
+
+#filmes, .sobre {
+    padding: 35px 8%;
+    text-align: center;
+}
+
+.lista-filmes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filme {
+    width: 220px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 8px #00000020;
+}
+
+.filme a {
+    color: var(--primary-color);
+}
+
+.sobre {
+    background-color: #deded2;
+}
+
+.pagina-critica {
+    width: min(500px, 86%);
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 8px #00000020;
+}
+
+.pagina-critica h2, .pagina-critica > p {
+    text-align: center;
+}
+
+.pagina-critica form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pagina-critica input {
+    margin-bottom: 8px;
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.pagina-critica .botao {
+    align-self: flex-start;
+}
+
+#resultadoCritica {
+    margin-top: 25px;
+    padding: 15px;
+    border-left: 5px solid var(--secondary-color);
+    background-color: #f5f3e9;
+}
+
+footer {
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    .pagina-critica {
+        padding: 20px;
+    }
+}
+
